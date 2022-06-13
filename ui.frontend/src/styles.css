@@ -25,3 +25,7 @@ p,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   color: #000000;
 }
+
+color-red {
+  color: red;
+}
