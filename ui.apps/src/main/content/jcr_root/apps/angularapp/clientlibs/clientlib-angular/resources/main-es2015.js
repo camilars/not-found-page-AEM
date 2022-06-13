@@ -49,6 +49,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/not-found/not-found.component.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/not-found/not-found.component.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <header class=\"header\">\n    <h3>404 NOT FOUND</h3>\n  </header>\n  <main class=\"main\">\n    <div class=\"main-img\"><img class=\"img\" src=\"assets/img/not-found.png\"></div>\n    <div class=\"main-text\">\n      <h1 class=\"text-header\">I have bad news <br> for you</h1>\n      <p class=\"text-p\">The page you are looking <br> for might be removed or is <br> temporarily unavailable</p>\n      <button class=\"btn\">Back to homepage</button>\n    </div>\n  </main>\n  <footer class=\"footer\">\n    <p class=\"footer-text\">created by {{username}} - devChallenges.io</p>\n  </footer> \n</div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/page/page.component.html":
 /*!*******************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/page/page.component.html ***!
@@ -208,6 +221,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _adobe_aem_core_components_angular_spa_containers_accordion_v1__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @adobe/aem-core-components-angular-spa/containers/accordion/v1 */ "./node_modules/@adobe/aem-core-components-angular-spa/__ivy_ngcc__/fesm2015/adobe-aem-core-components-angular-spa-containers-accordion-v1.js");
 /* harmony import */ var _adobe_aem_core_components_angular_base_layout_language_navigation_v1__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @adobe/aem-core-components-angular-base/layout/language-navigation/v1 */ "./node_modules/@adobe/aem-core-components-angular-base/__ivy_ngcc__/fesm2015/adobe-aem-core-components-angular-base-layout-language-navigation-v1.js");
 /* harmony import */ var _components_basic_component_basic_component_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/basic-component/basic-component.component */ "./src/app/components/basic-component/basic-component.component.ts");
+/* harmony import */ var _components_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/not-found/not-found.component */ "./src/app/components/not-found/not-found.component.ts");
+
 
 
 
@@ -251,7 +266,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _adobe_aem_core_components_angular_base_layout_language_navigation_v1__WEBPACK_IMPORTED_MODULE_20__["AemAngularCoreWcmComponentsLanguageNavigationV1"],
         ],
         providers: [_components_model_manager_service__WEBPACK_IMPORTED_MODULE_8__["ModelManagerService"], { provide: _angular_common__WEBPACK_IMPORTED_MODULE_2__["APP_BASE_HREF"], useValue: "/" }],
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_9__["PageComponent"], _components_basic_component_basic_component_component__WEBPACK_IMPORTED_MODULE_21__["BasicComponentComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_9__["PageComponent"], _components_basic_component_basic_component_component__WEBPACK_IMPORTED_MODULE_21__["BasicComponentComponent"], _components_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_22__["NotFoundComponent"]],
         entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_9__["PageComponent"], _components_basic_component_basic_component_component__WEBPACK_IMPORTED_MODULE_21__["BasicComponentComponent"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]],
     })
@@ -452,6 +467,56 @@ ModelManagerService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])()
 ], ModelManagerService);
 
+
+
+/***/ }),
+
+/***/ "./src/app/components/not-found/not-found.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/components/not-found/not-found.component.scss ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("* {\n  box-sizing: border-box;\n  overflow: hidden;\n}\n\n.container {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  font-size: 16px;\n  padding: 0 70px;\n}\n\n.header {\n  height: 15%;\n  font-family: Inconsolata;\n  font-style: normal;\n  font-weight: 700;\n  font-size: 1.5rem;\n  text-transform: uppercase;\n  letter-spacing: -0.08em;\n}\n\n.main {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 80%;\n}\n\n.main-img {\n  text-align: center;\n}\n\n.img {\n  width: 75%;\n}\n\n.text-header {\n  font-family: Space Mono;\n  font-style: normal;\n  font-weight: 700;\n  font-size: 4rem;\n  color: #333333;\n  line-height: 95px;\n  letter-spacing: -0.035em;\n  margin: 0;\n}\n\n.text-p {\n  font-family: Space Mono;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 1.5rem;\n  line-height: 36px;\n  letter-spacing: -0.035em;\n  color: #4f4f4f;\n}\n\n.btn {\n  width: 216px;\n  height: 68px;\n  font-family: Space Mono;\n  font-size: 0.9rem;\n  font-weight: 700;\n  background: #333333;\n  color: #ffffff;\n  border: none;\n  cursor: pointer;\n  text-transform: uppercase;\n}\n\n.footer {\n  height: 5%;\n  text-align: center;\n  font-family: Montserrat;\n}\n\n.footer-text {\n  font-weight: 500;\n  font-size: 0.9rem;\n  color: #bdbdbd;\n}\n\n@media screen and (max-width: 767px) {\n  .main {\n    flex-direction: column;\n  }\n\n  .container {\n    padding: 0 24px;\n  }\n\n  .text-header {\n    font-size: 3rem;\n    line-height: 71px;\n  }\n\n  .text-p {\n    font-size: 1.1rem;\n    line-height: 27px;\n  }\n\n  br {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ub3QtZm91bmQvQzpcXENvbXBhc3NvXFxBRU1cXGRlc2FmaW9zLWFlbVxcYWVtLmFuZ3VsYXIuYmFzaWNcXHVpLmZyb250ZW5kL3NyY1xcYXBwXFxjb21wb25lbnRzXFxub3QtZm91bmRcXG5vdC1mb3VuZC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9ub3QtZm91bmQvbm90LWZvdW5kLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQUE7RUFDQSxnQkFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLGFBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLHdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EseUJBQUE7RUFDQSx1QkFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLFdBQUE7QUNDRjs7QURFQTtFQUNFLGtCQUFBO0FDQ0Y7O0FERUE7RUFDRSxVQUFBO0FDQ0Y7O0FERUE7RUFDRSx1QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtFQUNBLGlCQUFBO0VBQ0Esd0JBQUE7RUFDQSxTQUFBO0FDQ0Y7O0FERUE7RUFDRSx1QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGlCQUFBO0VBQ0Esd0JBQUE7RUFDQSxjQUFBO0FDQ0Y7O0FERUE7RUFDRSxZQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7QUNDRjs7QURFQTtFQUNFLFVBQUE7RUFDQSxrQkFBQTtFQUNBLHVCQUFBO0FDQ0Y7O0FERUE7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtBQ0NGOztBREVBO0VBQ0U7SUFDRSxzQkFBQTtFQ0NGOztFREVBO0lBQ0UsZUFBQTtFQ0NGOztFREVBO0lBQ0UsZUFBQTtJQUNBLGlCQUFBO0VDQ0Y7O0VERUE7SUFDRSxpQkFBQTtJQUNBLGlCQUFBO0VDQ0Y7O0VERUE7SUFDRSxhQUFBO0VDQ0Y7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbm90LWZvdW5kL25vdC1mb3VuZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAxMDB2aDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG4gIHBhZGRpbmc6IDAgNzBweDtcclxufVxyXG5cclxuLmhlYWRlciB7XHJcbiAgaGVpZ2h0OiAxNSU7XHJcbiAgZm9udC1mYW1pbHk6IEluY29uc29sYXRhO1xyXG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG4gIGZvbnQtc2l6ZTogMS41cmVtO1xyXG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IC0wLjA4ZW07XHJcbn1cclxuXHJcbi5tYWluIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiA4MCU7XHJcbn1cclxuXHJcbi5tYWluLWltZyB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4uaW1nIHtcclxuICB3aWR0aDogNzUlO1xyXG59XHJcblxyXG4udGV4dC1oZWFkZXIge1xyXG4gIGZvbnQtZmFtaWx5OiBTcGFjZSBNb25vO1xyXG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG4gIGZvbnQtc2l6ZTogNHJlbTtcclxuICBjb2xvcjogIzMzMzMzMztcclxuICBsaW5lLWhlaWdodDogOTVweDtcclxuICBsZXR0ZXItc3BhY2luZzogLTAuMDM1ZW07XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4udGV4dC1wIHtcclxuICBmb250LWZhbWlseTogU3BhY2UgTW9ubztcclxuICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICBmb250LXNpemU6IDEuNXJlbTtcclxuICBsaW5lLWhlaWdodDogMzZweDtcclxuICBsZXR0ZXItc3BhY2luZzogLTAuMDM1ZW07XHJcbiAgY29sb3I6ICM0ZjRmNGY7XHJcbn1cclxuXHJcbi5idG4ge1xyXG4gIHdpZHRoOiAyMTZweDtcclxuICBoZWlnaHQ6IDY4cHg7XHJcbiAgZm9udC1mYW1pbHk6IFNwYWNlIE1vbm87XHJcbiAgZm9udC1zaXplOiAwLjlyZW07XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICBiYWNrZ3JvdW5kOiAjMzMzMzMzO1xyXG4gIGNvbG9yOiAjZmZmZmZmO1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxufVxyXG5cclxuLmZvb3RlciB7XHJcbiAgaGVpZ2h0OiA1JTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQ7XHJcbn1cclxuXHJcbi5mb290ZXItdGV4dCB7XHJcbiAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICBmb250LXNpemU6IDAuOXJlbTtcclxuICBjb2xvcjogI2JkYmRiZDtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAubWFpbiB7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIH1cclxuXHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBwYWRkaW5nOiAwIDI0cHg7XHJcbiAgfVxyXG5cclxuICAudGV4dC1oZWFkZXIge1xyXG4gICAgZm9udC1zaXplOiAzcmVtO1xyXG4gICAgbGluZS1oZWlnaHQ6IDcxcHg7XHJcbiAgfVxyXG5cclxuICAudGV4dC1wIHtcclxuICAgIGZvbnQtc2l6ZTogMS4xcmVtO1xyXG4gICAgbGluZS1oZWlnaHQ6IDI3cHg7XHJcbiAgfVxyXG5cclxuICBiciB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxufVxyXG4iLCIqIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMHZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBmb250LXNpemU6IDE2cHg7XG4gIHBhZGRpbmc6IDAgNzBweDtcbn1cblxuLmhlYWRlciB7XG4gIGhlaWdodDogMTUlO1xuICBmb250LWZhbWlseTogSW5jb25zb2xhdGE7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgZm9udC1zaXplOiAxLjVyZW07XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIGxldHRlci1zcGFjaW5nOiAtMC4wOGVtO1xufVxuXG4ubWFpbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDgwJTtcbn1cblxuLm1haW4taW1nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW1nIHtcbiAgd2lkdGg6IDc1JTtcbn1cblxuLnRleHQtaGVhZGVyIHtcbiAgZm9udC1mYW1pbHk6IFNwYWNlIE1vbm87XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgZm9udC1zaXplOiA0cmVtO1xuICBjb2xvcjogIzMzMzMzMztcbiAgbGluZS1oZWlnaHQ6IDk1cHg7XG4gIGxldHRlci1zcGFjaW5nOiAtMC4wMzVlbTtcbiAgbWFyZ2luOiAwO1xufVxuXG4udGV4dC1wIHtcbiAgZm9udC1mYW1pbHk6IFNwYWNlIE1vbm87XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgZm9udC1zaXplOiAxLjVyZW07XG4gIGxpbmUtaGVpZ2h0OiAzNnB4O1xuICBsZXR0ZXItc3BhY2luZzogLTAuMDM1ZW07XG4gIGNvbG9yOiAjNGY0ZjRmO1xufVxuXG4uYnRuIHtcbiAgd2lkdGg6IDIxNnB4O1xuICBoZWlnaHQ6IDY4cHg7XG4gIGZvbnQtZmFtaWx5OiBTcGFjZSBNb25vO1xuICBmb250LXNpemU6IDAuOXJlbTtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgYmFja2dyb3VuZDogIzMzMzMzMztcbiAgY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlcjogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xufVxuXG4uZm9vdGVyIHtcbiAgaGVpZ2h0OiA1JTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LWZhbWlseTogTW9udHNlcnJhdDtcbn1cblxuLmZvb3Rlci10ZXh0IHtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgZm9udC1zaXplOiAwLjlyZW07XG4gIGNvbG9yOiAjYmRiZGJkO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xuICAubWFpbiB7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgfVxuXG4gIC5jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDAgMjRweDtcbiAgfVxuXG4gIC50ZXh0LWhlYWRlciB7XG4gICAgZm9udC1zaXplOiAzcmVtO1xuICAgIGxpbmUtaGVpZ2h0OiA3MXB4O1xuICB9XG5cbiAgLnRleHQtcCB7XG4gICAgZm9udC1zaXplOiAxLjFyZW07XG4gICAgbGluZS1oZWlnaHQ6IDI3cHg7XG4gIH1cblxuICBiciB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/not-found/not-found.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/components/not-found/not-found.component.ts ***!
+  \*************************************************************/
+/*! exports provided: NotFoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotFoundComponent", function() { return NotFoundComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @adobe/aem-angular-editable-components */ "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+
+let NotFoundComponent = class NotFoundComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()
+], NotFoundComponent.prototype, "username", void 0);
+NotFoundComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-not-found',
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./not-found.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/not-found/not-found.component.html")).default,
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./not-found.component.scss */ "./src/app/components/not-found/not-found.component.scss")).default]
+    })
+], NotFoundComponent);
+
+Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])('angularapp/components/not-found')(NotFoundComponent);
 
 
 /***/ }),

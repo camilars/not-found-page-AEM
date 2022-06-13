@@ -87,6 +87,14 @@
                             <artifactId>spa.project.core.ui.apps</artifactId>
                             <target>/apps/angularapp-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/edgeuol-vendor-packages/container/install</target>
+                            <filter>true</filter>
+                            <isAllVersionsFilter>true</isAllVersionsFilter>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -220,6 +228,13 @@
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>spa.project.core.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>5.2.0</version>
+            <type>zip</type>
+            <classifier>min</classifier>
         </dependency>
     </dependencies>
 </project>
