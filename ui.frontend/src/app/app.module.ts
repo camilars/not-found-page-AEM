@@ -22,8 +22,12 @@ import { AemAngularCoreWcmComponentsListV2 } from "@adobe/aem-core-components-an
 import { AemAngularCoreWcmComponentsSeparatorV1 } from "@adobe/aem-core-components-angular-base/authoring/separator/v1";
 import { AemAngularCoreWcmComponentsAccordionV1 } from "@adobe/aem-core-components-angular-spa/containers/accordion/v1";
 import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core-components-angular-base/layout/language-navigation/v1";
-import { BasicComponentComponent } from "./components/basic-component/basic-component.component";
-import { MultifieldExampleComponent } from "./components/multifield-example-component/multifield-example-component";
+import { BasicComponentComponent } from './components/basic-component/basic-component.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { TitleComponentComponent } from './components/title-component/title-component.component';
+import { ImageComponentComponent } from './components/image-component/image-component.component';
+import { TextComponentComponent } from './components/text-component/text-component.component';
+import { InputComponentComponent } from './components/input-component/input-component.component';
 
 @NgModule({
   imports: [
@@ -44,15 +48,22 @@ import { MultifieldExampleComponent } from "./components/multifield-example-comp
   ],
   providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: "/" }],
   declarations: [
-    AppComponent,
-    PageComponent,
-    BasicComponentComponent,
-    MultifieldExampleComponent,
+    AppComponent, 
+    PageComponent, 
+    BasicComponentComponent, 
+    NotFoundComponent, 
+    TitleComponentComponent, 
+    ImageComponentComponent, 
+    TextComponentComponent, 
+    InputComponentComponent
   ],
   entryComponents: [
-    PageComponent,
-    BasicComponentComponent,
-    MultifieldExampleComponent,
+    PageComponent, 
+    BasicComponentComponent, 
+    TitleComponentComponent, 
+    ImageComponentComponent, 
+    TextComponentComponent, 
+    InputComponentComponent
   ],
   bootstrap: [AppComponent],
 })
