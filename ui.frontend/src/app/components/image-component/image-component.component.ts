@@ -1,20 +1,19 @@
-import { MapTo } from '@adobe/aem-angular-editable-components';
-import { Component, Input, OnInit } from '@angular/core';
+import { MapTo } from "@adobe/aem-angular-editable-components";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-image-component',
-  templateUrl: './image-component.component.html',
-  styleUrls: ['./image-component.component.css']
+  selector: "app-image-component",
+  templateUrl: "./image-component.component.html",
+  styleUrls: ["./image-component.component.css"],
 })
 export class ImageComponentComponent implements OnInit {
+  @Input() imagePath: {
+    src: string;
+  };
 
-  @Input() imagePath: string;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
 
-MapTo('angularapp/components/image-component')(ImageComponentComponent)
+MapTo("angularapp/components/image-component")(ImageComponentComponent);

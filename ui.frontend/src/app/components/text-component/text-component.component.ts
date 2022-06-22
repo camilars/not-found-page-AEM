@@ -1,20 +1,23 @@
-import { MapTo } from '@adobe/aem-angular-editable-components';
-import { Component, Input, OnInit } from '@angular/core';
+import { MapTo } from "@adobe/aem-angular-editable-components";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-text-component',
-  templateUrl: './text-component.component.html',
-  styleUrls: ['./text-component.component.css']
+  selector: "app-text-component",
+  templateUrl: "./text-component.component.html",
+  styleUrls: ["./text-component.component.css"],
 })
 export class TextComponentComponent implements OnInit {
-
   @Input() text: string;
+  @Input() size: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  get textClasses() {
+    const classes = ["text-font-" + this.size];
+    return classes;
   }
-
 }
 
-MapTo('angularapp/components/text-component')(TextComponentComponent)
+MapTo("angularapp/components/text-component")(TextComponentComponent);
